@@ -1,0 +1,11 @@
+
+<div class="row">
+    <div *ngFor="let item of listado" class="col-md-4 col-sm-6 animate__animated fadeIn">
+        <!-- <p>{{item.images.original.url}}</p> -->
+        <img [src]="item.images.downsized_medium.url" alt="" class="card-img-top">
+        <div class="card-body">
+            <p class="card-text">{{item.title}}</p>
+        </div>
+    </div>
+
+</div>
